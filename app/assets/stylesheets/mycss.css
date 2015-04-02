@@ -1,0 +1,34 @@
+
+body{
+background-color:#a9a9a9;
+}
+
+
+.tbody{
+background-color:#a9a9a9;
+}
+
+.top{
+font-size: 500%;
+font-family: "Arial Black";
+color: #ff7f50;
+padding-top: 20px;
+}
+.sum_money{
+font-family: "Arial Black";
+padding-top: 30px;
+font-size: 150%
+}
+
+.sumprice{
+font-family: "Arial Black";
+color: #ff7f50;
+padding: 30px;
+font-size: 300%
+}
+
+.RECOMMENDED{
+font-family: "Arial Black";
+padding: 30px;
+font-size: 300%
+}

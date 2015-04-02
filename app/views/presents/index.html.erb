@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Presents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Descript</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @presents.each do |present| %>
+      <tr>
+        <td><%= present.name %></td>
+        <td><%= present.price %></td>
+        <td><%= present.descript %></td>
+        <td><%= link_to 'Show', present %></td>
+        <td><%= link_to 'Edit', edit_present_path(present) %></td>
+        <td><%= link_to 'Destroy', present, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Present', new_present_path %>

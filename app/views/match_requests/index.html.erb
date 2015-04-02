@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Match Requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Request user</th>
+      <th>Target user</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @match_requests.each do |match_request| %>
+      <tr>
+        <td><%= match_request.request_user_id %></td>
+        <td><%= match_request.target_user_id %></td>
+        <td><%= link_to 'Show', match_request %></td>
+        <td><%= link_to 'Edit', edit_match_request_path(match_request) %></td>
+        <td><%= link_to 'Destroy', match_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Match request', new_match_request_path %>
